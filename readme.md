@@ -5,7 +5,7 @@ JavaScript Notes
 
 
 # Index
-1. [Introduction](#introduction)
+1. [Introduction](https://github.com/pramodkumarboda/javascript_notes)
 2. [Lexical Structure](#lexical-structure)
 3. [Data Types]()
 
