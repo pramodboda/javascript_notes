@@ -11,6 +11,8 @@ JavaScript Notes
 3. [Data Types]()
 
 <a id="introduction"></a>
+
+[tocImg]: <img src="images/toc.png" width="24" height="24"/>
 # Introduction
 ## What is JavaScript?
 - JavaScript is the Programming language of the **Web**
@@ -40,7 +42,7 @@ name; => "Pramod Boda"
 - The overwhelming majority of modern websites use JavaScript, and all web browsers.
 - JavaScript has long since out grown its scripting - language roots to become a robust and efficient general - purpose language.
 
-[<img src="images/toc.png" width="24" height="24"/>](#toc)
+![tocImg](#toc)
 
 <a id="lexicalStructure"></a>
 ## Lexical Structure
