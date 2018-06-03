@@ -40,7 +40,7 @@ name; => "Pramod Boda"
 - The overwhelming majority of modern websites use JavaScript, and all web browsers.
 - JavaScript has long since out grown its scripting - language roots to become a robust and efficient general - purpose language.
 
-![alt text] ( images/toc.png)
+![alt text] (<img src="images/toc.png" width="24" height="24"/>)
 
 <a id="lexicalStructure"></a>
 ## Lexical Structure
