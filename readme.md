@@ -40,7 +40,7 @@ name; => "Pramod Boda"
 - The overwhelming majority of modern websites use JavaScript, and all web browsers.
 - JavaScript has long since out grown its scripting - language roots to become a robust and efficient general - purpose language.
 
-[<img src="images/toc.png" width="24" height="24"/>](#toc)
+[<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
 
 <a id="lexicalStructure"></a>
 ## Lexical Structure
@@ -127,7 +127,7 @@ var π = 3.14;
 ### Dynamic Typing
 JavaScript is a loosely typed or a dynamic language.
 
-[![alt text] [toc]](#toc)
+[<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
 ## Data types
 The latest ECMAScript standard defines seven data types:
 - Six data types that are primitives:
@@ -200,7 +200,7 @@ foo === undefined
 143143/0 ==>??
 ```
 
-[![alt text] [toc]](#toc)
+[<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
 ## Operators
 ### What will be the output and why?
 ```javascript
