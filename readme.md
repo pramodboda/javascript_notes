@@ -5,14 +5,14 @@ JavaScript Notes
 
 <a id="toc"></a>
 
-# Index
+## Index
 1. [Introduction](#introduction)
 2. [Lexical Structure](#lexicalStructure)
 3. [Data Types]()
 
 <a id="introduction"></a>
-# Introduction
-## What is JavaScript?
+## Introduction
+### What is JavaScript?
 - JavaScript is the Programming language of the **Web**
 - JavaScript is part of the triad of technologies that all developers must learn
 
