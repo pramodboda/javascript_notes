@@ -3,7 +3,9 @@ JavaScript Notes
 ## About Pramod Boda
 **Artist** | **UI Designer and Developer** | **Motion Graphic Designer**
 
+<a id="toc"></a>
 
+[toc]:  https://cdn3.iconfinder.com/data/icons/iconic-1/32/arrow_up_alt1-24.png "Table of context"
 # Index
 1. [Introduction](#introduction)
 2. [Lexical Structure](#lexicalStructure)
@@ -38,6 +40,8 @@ name; => "Pramod Boda"
 - JavaScript well-suited to object-oriented and functional programming style.
 - The overwhelming majority of modern websites use JavaScript, and all web browsers.
 - JavaScript has long since out grown its scripting - language roots to become a robust and efficient general - purpose language.
+
+[![alt text] [toc]](#toc)
 
 <a id="lexicalStructure"></a>
 ## Lexical Structure
@@ -119,6 +123,93 @@ var π = 3.14;
 ```
 
 ### Reserved Words
+
+
+### Dynamic Typing
+JavaScript is a loosely typed or a dynamic language.
+
+[![alt text] [toc]](#toc)
+## Data types
+The latest ECMAScript standard defines seven data types:
+- Six data types that are primitives:
+  - Number
+  - String
+  - Boolean
+  - Undefined
+  - Null
+  - Symbol (new in ECMAScript 2015) 
+- and Object
+
+```javascript
+typeof 143
+=> "number"
+```
+```javascript
+typeof "Pramod"
+=> "string"
+```
+```javascript
+typeof true
+=> "boolean"
+```
+```javascript
+typeof undefined
+=> "undefined"
+```
+```javascript
+typeof null
+=> "object"
+```
+```javascript
+typeof []
+=> "object"
+```
+```javascript
+typeof {}
+=> "object"
+```
+```javascript
+typeof NaN
+=> "number"
+```
+### Numbers
+### Strings
+### Boolean
+### Undefined
+### Null
+
+### Best ways to check for each type
+```javascript
+var foo;
+
+typeof foo == 'undefined'
+=>true
+
+isNaN(foo);
+=>true
+
+foo === undefined
+=>true
+```
+
+
+
+
+
+### What happens when you divide by zero in JavaScript?
+```javascript
+143143/0 ==>??
+```
+
+[![alt text] [toc]](#toc)
+## Operators
+### What will be the output and why?
+```javascript
+1>2>3 ==>??
+3>2>1 ==>??
+```
+
+## Stay Tuned ...
 
 
 
