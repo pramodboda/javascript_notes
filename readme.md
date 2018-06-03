@@ -5,7 +5,7 @@ JavaScript Notes
 
 <a id="toc"></a>
 
-[toc]: <img src="images/toc.png" width="24" height="24" />
+[toc]: img src="images/toc.png" width="24" height="24"
 # Index
 1. [Introduction](#introduction)
 2. [Lexical Structure](#lexicalStructure)
@@ -41,7 +41,7 @@ name; => "Pramod Boda"
 - The overwhelming majority of modern websites use JavaScript, and all web browsers.
 - JavaScript has long since out grown its scripting - language roots to become a robust and efficient general - purpose language.
 
-[![alt text] [toc]]
+[![alt text] [<toc/>]]
 
 <a id="lexicalStructure"></a>
 ## Lexical Structure
