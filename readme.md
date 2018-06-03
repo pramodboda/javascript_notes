@@ -68,19 +68,27 @@ name; => "Pramod Boda"
 - JavaScript supports two style of comments.
 - Any text between a // and the end of a line is treated as a comment. and is ignored by JavaScript.
 - Single comment example:
--  ```javascript
-		// This is a Single line comment.
-	 ```
+```javascript
+// This is a Single line comment.
+```
 
 - Any text between the characters /* and */ is also treated as a comment; These comments may span mutiple lines but may not be nested.
 - Multi-Line comment example:
--  ```javascript
-		/* 
-		* This is a
-		* Multiple lines
-		* comment.
-		*/
-	 ```
+```javascript
+/* 
+* This is a
+* Multiple lines
+* comment.
+*/
+```
+
+### Literals 
+
+- A literals is a data that appears directly in a program.
+```javascript
+46 // The number forty six.
+4.6 // The number four point six.
+```
 
 
 
