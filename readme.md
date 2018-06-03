@@ -48,7 +48,7 @@ name; => "Pramod Boda"
 - JavaScript programs are writing using the Unicode character set.
 - unicode is a superset of ASCII and Latin-1 and supports virtually every written language currently used on the planet.
 
-### Case Sencitivity
+### Case sensitivity
 - JavaScript is a case-sensitive language. This means that language keywords, variables, funations names, and other identifies must always be typed with consistent capitalization of letters.
 ```javascript
 var name = "Pramod Boda"; //initiated variable 'name'
@@ -86,9 +86,40 @@ name; => "Pramod Boda"
 
 - A literals is a data that appears directly in a program.
 ```javascript
-46 // The number forty six.
-4.6 // The number four point six.
+46 // The Number forty six.
+4.6 // The Number four point six.
+"Hylo World" // A String of text.
+'Hi' // Another String.
+true // A Boolean value.
+false // another Booleans value.
+/javascript/gi // A regular expression literal (for pattern matching)
+null // Absence of object.
 ```
+
+```javascript
+x:3, y:5 // An object initializer
+[1,2,3,a,b,c,4,5] // An array initializer.
+```
+
+### Identifiers
+- An identifires is simple a name. In JavaScript, identifires are used to name variables and functions and to provide labels for certain loops in JavaScript code.
+- These are all legal identifiers: 
+```javascript
+var trueVar
+my_variable_name()
+var v143
+_trueVariable()
+var $strVariable
+```
+
+#### mathematical symbols
+```javascript
+var si = true;
+var π = 3.14;
+```
+
+### Reserved Words
+
 
 
 
