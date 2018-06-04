@@ -115,7 +115,7 @@ _trueVariable() // function name
 var $strVariable // variable initialization
 ```
 
-#### mathematical symbols
+#### Mathematical symbols
 ```javascript
 var si = true;
 var π = 3.14;
