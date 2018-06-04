@@ -176,8 +176,9 @@ typeof NaN
 -  Besides regular numbers, there are other values so-called "special numeric values" which  also belong to that type: `Infinity`, `-Infinity`, and `NaN`.
 - ### What happens when you divide by zero in JavaScript?
 	 ```javascript
-	143143/0 ==>??
+	3564554/0 ==>??
 	```
+
 ### Strings
 ### Boolean
 ### Undefined
