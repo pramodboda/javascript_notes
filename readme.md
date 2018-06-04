@@ -108,11 +108,11 @@ x:3, y:5 // An object initializer
 - An identifires is simple a name. In JavaScript, identifires are used to name variables and functions and to provide labels for certain loops in JavaScript code.
 - These are all legal identifiers: 
 ```javascript
-var trueVar
-my_variable_name()
-var v143
-_trueVariable()
-var $strVariable
+var trueVar // variable initialization
+my_variable_name() // function name
+var v143 // variable initialization
+_trueVariable() // function name
+var $strVariable // variable initialization
 ```
 
 #### mathematical symbols
