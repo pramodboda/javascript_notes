@@ -1,9 +1,10 @@
 JavaScript Notes
 =
+<a id="toc"></a>
 ## About Pramod Boda
 **Artist** | **UI Designer and Developer** | **Motion Graphic Designer**
 
-<a id="toc"></a>
+
 
 ## Index
 1. [Introduction](#introduction)
@@ -173,6 +174,13 @@ typeof NaN
 ```
 ### Numbers
 - A *number* type serves both for integer and floating point numbers.
+- When a *number* appears directly in a JavaScript program, it's called a *Numeric literals*.
+- JavaScript supports numeric literals in several  formats.
+```javascript
+6
+4
+54613244
+``` 
 -  Besides regular numbers, there are other values so-called "special numeric values" which  also belong to that type: `Infinity`, `-Infinity`, and `NaN`.
 - ### What happens when you divide by zero in JavaScript?
 	 ```javascript
