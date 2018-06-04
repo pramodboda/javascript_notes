@@ -172,6 +172,12 @@ typeof NaN
 => "number"
 ```
 ### Numbers
+- A *number* type serves both for integer and floating point numbers.
+-  Besides regular numbers, there are other values so-called "special numeric values" which  also belong to that type: `Infinity`, `-Infinity`, and `NaN`.
+- ### What happens when you divide by zero in JavaScript?
+	 ```javascript
+	143143/0 ==>??
+	```
 ### Strings
 ### Boolean
 ### Undefined
@@ -189,15 +195,6 @@ isNaN(foo);
 
 foo === undefined
 =>true
-```
-
-
-
-
-
-### What happens when you divide by zero in JavaScript?
-```javascript
-143143/0 ==>??
 ```
 
 [<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
