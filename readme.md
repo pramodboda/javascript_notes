@@ -215,20 +215,31 @@ var jsDouble = 3545435745.56454; // 64-bit floating-point number
 	3564554/0 ==>??
 	```
 
-**Converting Strings to Numbers**
+**Number Methods**
+
 - The global method **Number()** can convert string to numbers.
 - Empty strings convert to 0.
 - Anything else converts to NaN(Not a Number). 
 ```javascript
+//Converting Strings to Number
 Number("1.43") // returns 3.14  
 Number(" ") // returns 0  
 Number("") // returns 0  
 Number("545 454") // returns NaN
+Number("Pramod") // returns NaN
+Number
 ```
 ### Strings
 ```javascript
 var myString = "This is a string text."
 ```
+**String Methods**
+Methods | Description
+------------|---------------
+toString | returns a number as a String.
+toExponential() | returns a String, with number rounded and written using exponential notation.
+toFixed() | returns a string, with the number written with a specified number of decimals.
+- 
 #### Concatenation
 We can also add strings which will concatenate them, or put them together.
 ```javascript
@@ -238,7 +249,7 @@ var myStringConcatenate = "This is "+"a string text." // This is a string text.
 ### Boolean
 ```javascript
 var myBoolean = true;
-var myBoolean = false;
+var myBoolean2 = false;
 ```
 
 ### Undefined
