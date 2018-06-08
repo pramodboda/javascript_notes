@@ -51,7 +51,7 @@ name; => "Pramod Boda"
 
 ### Character Set
 - JavaScript programs are writing using the Unicode character set.
-- unicode is a superset of ASCII and Latin-1 and supports virtually every written language currently used on the planet.
+- Unicode is a superset of ASCII and Latin-1 and supports virtually every written language currently used on the planet.
 
 ### Case sensitivity
 - JavaScript is a case-sensitive language. This means that language keywords, variables, funations names, and other identifies must always be typed with consistent capitalization of letters.
@@ -128,8 +128,8 @@ var π = 3.14;
 
 ### Dynamic Typing
 JavaScript is a loosely typed or a dynamic language.
+
 [<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
-<a id="jsDataTypes"></a>
 <a id="jsVariables"></a>
 ## Variables
 **Defining a variable**
