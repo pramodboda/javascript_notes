@@ -129,12 +129,13 @@ var π = 3.14;
 JavaScript is a loosely typed or a dynamic language.
 
 ## Variables
-** Defining a variable**
+**Defining a variable**
 ```javascript
 var myVariable = "This is a variable!";
 ```
-This variable is called a "String" because it has ASCII characters(A-Z, 0-9, !@#$%^&*()?|\/)
-** Using a variable **
+- This variable is called a "String" because it has ASCII characters(A-Z, 0-9, !@#$%^&*()?|\/)
+
+**Using a variable**
 ```javascript
 var num = 140;
 ```
