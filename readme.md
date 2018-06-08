@@ -234,12 +234,12 @@ Number
 var myString = "This is a string text."
 ```
 **String Methods**
-Methods | Description
-------------|---------------
-toString | returns a number as a String.
-toExponential() | returns a String, with number rounded and written using exponential notation.
-toFixed() | returns a string, with the number written with a specified number of decimals.
-- 
+
+| Methods | Description |
+|--------| ------------- |
+| toString() | returns a number as a String. |
+| toExponential() | returns a String, with number rounded and written using exponential notation. |
+| toFixed()|returns a string, with the number written with a specified number of decimals.|
 #### Concatenation
 We can also add strings which will concatenate them, or put them together.
 ```javascript
