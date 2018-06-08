@@ -7,11 +7,12 @@ JavaScript Notes
 
 
 ## Index
-1. [Introduction](#introduction)
-2. [Lexical Structure](#lexicalStructure)
-3. [Data Types]()
+1. [Introduction](#jsIntroduction)
+2. [Lexical Structure](#jsLexicalStructure)
+4. [Variables](#jsVariables) 
+5. [Data Types](#jsDataTypes)
 
-<a id="introduction"></a>
+<a id="jsIntroduction"></a>
 ## Introduction
 ### What is JavaScript?
 - JavaScript is the Programming language of the **Web**
@@ -43,7 +44,7 @@ name; => "Pramod Boda"
 
 [<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
 
-<a id="lexicalStructure"></a>
+<a id="jsLexicalStructure"></a>
 ## Lexical Structure
 
 - The lexical structure of a programming language is the set of elementary rules that specifies how you write programs in that language.
@@ -127,7 +128,9 @@ var π = 3.14;
 
 ### Dynamic Typing
 JavaScript is a loosely typed or a dynamic language.
-
+[<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
+<a id="jsDataTypes"></a>
+<a id="jsVariables"></a>
 ## Variables
 **Defining a variable**
 ```javascript
@@ -139,13 +142,13 @@ var myVariable = "This is a variable!";
 ```javascript
 var num = 140;
 ```
-** calling or using a variable **
+**Calling or using a variable**
 ```javascript
 num;
 sum = 3 + num;
 ```
-
 [<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
+<a id="jsDataTypes"></a>
 ## Data types
 The latest ECMAScript standard defines seven data types:
 - Six data types that are primitives:
@@ -198,14 +201,46 @@ typeof NaN
 4
 54613244
 ``` 
+**Types of Numbers**
+```javascript
+var jsInteger = 16; // 32-bit number (from -2,147,483,648 to 2,147,483,647)
+var jsLong = 96542464354564345; // 64-bit number (from -9,223,372,036,854,775,808 to
+9,223,372,036,854,775,807)
+var jsFloat = 2.6; // 32-bit floating-point number (decimal)
+var jsDouble = 3545435745.56454; // 64-bit floating-point number
+```
 -  Besides regular numbers, there are other values so-called "special numeric values" which  also belong to that type: `Infinity`, `-Infinity`, and `NaN`.
 - #### What happens when you divide by zero in JavaScript?
 	 ```javascript
 	3564554/0 ==>??
 	```
 
+**Converting Strings to Numbers**
+- The global method **Number()** can convert string to numbers.
+- Empty strings convert to 0.
+- Anything else converts to NaN(Not a Number). 
+```javascript
+Number("1.43") // returns 3.14  
+Number(" ") // returns 0  
+Number("") // returns 0  
+Number("545 454") // returns NaN
+```
 ### Strings
+```javascript
+var myString = "This is a string text."
+```
+**Concatenation**
+We can also add strings which will concatenate them, or put them together.
+```javascript
+var myStringConcatenate = "This is "+"a string text." // This is a string text.
+```
+
 ### Boolean
+```javascript
+var myBoolean = true;
+var myBoolean = false;
+```
+
 ### Undefined
 ### Null
 
