@@ -66,7 +66,7 @@ name; => "Pramod Boda"
 - Many client-side JavaScript objects and properties have the same names as the HTML tags and attributes they represent. 
 - While these tags and attributes names can be typed in any case in HTML, In JavaScript they typically must be all lowercase.
 
-> The HTML onclick event handler attribute is sometimes specified as onClick in HTML, but it must be specified as onclick in JavaScript code( or in XHTML documents).
+> The HTML onclick event handler attribute is sometimes specified as onClick in HTML, but it must be specified as onclick in JavaScript code(or in XHTML documents).
 
 ### Comments
 - JavaScript supports two style of comments.
@@ -128,6 +128,22 @@ var π = 3.14;
 ### Dynamic Typing
 JavaScript is a loosely typed or a dynamic language.
 
+## Variables
+** Defining a variable**
+```javascript
+var myVariable = "This is a variable!";
+```
+This variable is called a "String" because it has ASCII characters(A-Z, 0-9, !@#$%^&*()?|\/)
+** Using a variable **
+```javascript
+var num = 140;
+```
+** calling or using a variable **
+```javascript
+num;
+sum = 3 + num;
+```
+
 [<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
 ## Data types
 The latest ECMAScript standard defines seven data types:
@@ -182,7 +198,7 @@ typeof NaN
 54613244
 ``` 
 -  Besides regular numbers, there are other values so-called "special numeric values" which  also belong to that type: `Infinity`, `-Infinity`, and `NaN`.
-- ### What happens when you divide by zero in JavaScript?
+- #### What happens when you divide by zero in JavaScript?
 	 ```javascript
 	3564554/0 ==>??
 	```
