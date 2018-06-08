@@ -229,7 +229,7 @@ Number("545 454") // returns NaN
 ```javascript
 var myString = "This is a string text."
 ```
-**Concatenation**
+#### Concatenation
 We can also add strings which will concatenate them, or put them together.
 ```javascript
 var myStringConcatenate = "This is "+"a string text." // This is a string text.
