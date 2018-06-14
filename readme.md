@@ -268,7 +268,30 @@ The latest ECMAScript standard defines seven data types:
  // returns 1528416000000
 ```
 > The **Number()** method above returns the number of milliseconds since 1.1.1970.
-
+**The parseFloat() Method**
+- **parseFloat()** parses a string and returns a number.
+- Spaces are allowed.
+- Only the first number is returned.
+```javascript
+ parseFloat("143");
+ // 143
+ parseFloat("1.43");
+ // 1.43
+ parseFloat("14.3");
+ // 14.3
+ parseFloat("1 4 3");
+ // 1
+ parseFloat("143 years");
+ // 143
+ parseFloat("years 143");
+ // NaN
+ parseFloat("Pramod Boda");
+ // NaN
+ parseFloat(true);
+ // NaN
+ parseFloat(false);
+ // NaN
+```
 **The parseInt() Method**
 - **parseInt()** parses a string and returns a whole number.
 - Spaces are allowed.
@@ -285,6 +308,12 @@ The latest ECMAScript standard defines seven data types:
  parseInt("143 years"); 
  // 143
  parseInt("years 143"); 
+ // NaN
+ praseInt("Pramod Boda");
+ // NaN
+ praseInt(true);
+ // NaN
+ parseInt(false);
  // NaN
 ```
 
