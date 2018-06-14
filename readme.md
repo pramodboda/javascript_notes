@@ -327,7 +327,9 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 ```
 > If the `number` cannot be converted, NaN (Not a Number) is returned.
 
+
 **Number Properties**
+
 | Property | Description |
 | --------- | -------- |
 | `MAX_VALUE` | Returns the `largest number` possible in JavaScript |
