@@ -329,7 +329,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 
 **Number Properties**
 | Property | Description |
-|:---------:|:--------:|
+| --------- | -------- |
 | `MAX_VALUE` | Returns the `largest number` possible in JavaScript |
 | `MIN_VALUE` | Returns the `smallest number` possible in JavaScript |
 | `NEGATIVE_INFINITY` | Represents a `nagative infinity` (returned on overflow) |
