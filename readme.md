@@ -310,9 +310,9 @@ The latest ECMAScript standard defines seven data types:
  // 143
  parseInt("years 143"); 
  // NaN
- praseInt("Pramod Boda");
+ parseInt("Pramod Boda");
  // NaN
- praseInt(true);
+ parseInt(true);
  // NaN
  parseInt(false);
  // NaN
