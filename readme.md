@@ -150,7 +150,7 @@ JavaScript is a loosely typed or a dynamic language.
 [<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
 <a id="jsDataTypes"></a>
 ## Data Types
-The latest ECMAScript standard defines seven data types:
+The latest ECMAScript standard defines seven data types in JavaScript:
 - Six data types that are primitives:
   - `Number`
   - `String`
@@ -158,7 +158,11 @@ The latest ECMAScript standard defines seven data types:
   - `Undefined`
   - `Null`
   - `Symbol` (new in ECMAScript 2015) 
-- and `Object`
+- `object` are the most complex data type
+	- `Array`
+	- `Date`
+	- `Function` 
+	- `RegExp`
 
 ```javascript
  typeof 143
@@ -211,7 +215,9 @@ The latest ECMAScript standard defines seven data types:
 -  Besides regular numbers, there are other values so-called "special numeric values" which  also belong to that type: `Infinity`, `-Infinity`, and `NaN`.
 - #### What happens when you divide by zero in JavaScript?
 	 ```javascript
-      3564554/0 ==>??
+      3564554/0 //=> ??
+      143/ +0 //=> ??
+      143/ -0 //=> ??
 	```
 
 **Number Methods**
@@ -293,6 +299,8 @@ The latest ECMAScript standard defines seven data types:
  parseFloat(false);
  // NaN
 ```
+> If the `number` cannot be converted, NaN (Not a Number) is returned.
+
 **The parseInt() Method**
 - **parseInt()** parses a string and returns a whole number.
 - Spaces are allowed.
@@ -317,7 +325,76 @@ The latest ECMAScript standard defines seven data types:
  parseInt(false);
  // NaN
 ```
+> If the `number` cannot be converted, NaN (Not a Number) is returned.
 
+**Number Properties**
+| Property | Description |
+|:---------:|:--------:|
+| `MAX_VALUE` | Returns the `largest number` possible in JavaScript |
+| `MIN_VALUE` | Returns the `smallest number` possible in JavaScript |
+| `NEGATIVE_INFINITY` | Represents a `nagative infinity` (returned on overflow) |
+| `NaN` | Represents a `"Not-a-Number"` value |
+| `POSITIVE_INFINITY` | Represents `infinity` (returned on overflow) |
+| `constructor` | returns a function that created JavaScript's `Number property`  |
+| `prototype` | Allows you to add `properties` and `methods` to an `object`. |
+
+**Always use correct syntax**
+```javascript
+ var a = Number.MAX_VALUE;
+ console.log(a); // 1.7976931348623157e+308  // Return Value: A Number, 1.7976931348623157e+308
+ 
+ var b = Number.MIN_VALUE;
+ console.log(b); // 5e-324  // Return Value: A Number, 5e-324
+ 
+ Number.NEGATIVE_INFINITY //
+ 
+ Number.NaN //
+ 
+ Number.POSITIVE_INFINITY // 
+ 
+```
+
+
+#### MAX_VALUE
+
+The **`Number.MAX_VALUE`** property represents the maximum numeric value representable in JavaScript.
+
+```javascript
+ function multiply(x, y) {
+  if (x * y > Number.MAX_VALUE) {
+    return ("Process as Infinity");
+  }
+  return (x * y);
+ }
+ console.log(multiply(1.7976931348623157e+308, 1));
+ // expected output: 1.7976931348623157e+308
+
+ console.log(multiply(1.7976931348623157e+308, 2));
+ // expected output: "Process as Infinity"
+```
+
+#### MIN_VALUE
+
+- The **`Number.MIN_VALUE`** property represents the smallest positive numeric value re-presentable in JavaScript.
+- The `MIN_VALUE` property is the number closest to 0
+- `MIN_VALUE` has a value of approximately `5e-324`. 
+- Values smaller than `MIN_VALUE` ("underflow values") are converted to 0.
+- Because `MIN_VALUE` is a static property of `Number`, you always use it as `Number.MIN_VALUE`, rather than as a property of a `Number` object you created.
+
+```javascript
+ function multiply(x, y) {
+  if (x * y < Number.MIN_VALUE) {
+    return "Process as -Infinity";
+  }
+  return (x * y);
+ }
+ console.log(multiply(5e-324, 1));
+ // expected output: 5e-324
+ 
+ console.log(multiply(-1.7976931348623157e+308, 2));
+ // expected output: Process as -Infinity
+```
+#### MIN_VALUE
 ### Strings
 ```javascript
 var myString = "This is a string text."
