@@ -220,7 +220,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
       143/ -0 //=> ??
 	```
 
-### Number Methods
+### `Number` Methods
 
 - The global method **Number()** can convert string to `numbers`.
 - Empty `strings` convert to `0` Zero.
@@ -233,13 +233,21 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 - JavaScript `global` methods can be used on all JavaScript `data types`.
 
 
-| Methods | Description |
+| Method | Description |
 | ------ | ------- |
-| Number() | returns a `number`, converted from its arguments. |
-| parseFloat() | Parses its argument and returns a `floating point number` |
-| parseInt() | Parses its argument and returns an `integer`|
+| `Number()` | returns a `number`, converted from its arguments. |
+| `parseFloat()` | Parses its argument and returns a `floating point number` |
+| `parseInt()` | Parses its argument and returns an `integer`|
 
-### The Number() Method
+### Other  `Number` Methods
+| Method | Description |
+| ------ | ------- |
+| `isFinite()` | Checks whether a value is a `finite number` |
+| `isInteger()` | Checks whether a value is an `integer` |
+| `isNaN()` | Checks whether a value is Number.NaN |
+| `isSafeInteger()` | Checks whether a value is a safe integer |
+
+### The `Number()` Method
 ```javascript
  // Converting any data type to Number
  Number(true);
@@ -499,7 +507,12 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 
 ### The `prototype` Property
 - The `prototype` property allows you to add properties and methods to an `object`.
--    
+- When constructing a `property`, All `numbers` will be given the `property`, and its `value`, as default.
+- When constructing a `method`, All `numbers` will have this `method` available. 
+
+> `Number.prototype` does not refer to a single number `object`, but to the `Number()` object itself.
+
+> `Prototype` is a `global object constructor` which is available for all JavaScript `objects`.
 
 ## Strings
 ```javascript
