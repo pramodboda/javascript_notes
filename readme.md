@@ -205,7 +205,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  4
  54613244
 ``` 
-**Types of Numbers**
+### Types of Numbers
 ```javascript
  var jsInteger = 16; // 32-bit number (from -2,147,483,648 to 2,147,483,647)
  var jsLong = 96542464354564345; // 64-bit number (from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
@@ -220,7 +220,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
       143/ -0 //=> ??
 	```
 
-**Number Methods**
+### Number Methods
 
 - The global method **Number()** can convert string to `numbers`.
 - Empty `strings` convert to `0` Zero.
@@ -239,7 +239,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 | parseFloat() | Parses its argument and returns a `floating point number` |
 | parseInt() | Parses its argument and returns an `integer`|
 
-**The Number() Method**
+### The Number() Method
 ```javascript
  // Converting any data type to Number
  Number(true);
@@ -267,7 +267,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 ```
 > If the `number` cannot be converted, NaN (Not a Number) is returned.
 
-**The Number() method used on Dates**
+### The Number() method used on Dates
 - **Number()** can also convert a `Date` to a `Number`
 ```javascript
  Number(new Date("2018-06-08"))
@@ -275,7 +275,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 ```
 > The **Number()** method above returns the number of milliseconds since 1.1.1970.
 
-**The parseFloat() Method**
+### The `parseFloat()` Method
 - **parseFloat()** parses a string and returns a number.
 - Spaces are allowed.
 - Only the first number is returned.
@@ -303,7 +303,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 ```
 > If the `number` cannot be converted, NaN (Not a Number) is returned.
 
-**The parseInt() Method**
+### The `parseInt()` Method
 - **parseInt()** parses a string and returns a whole number.
 - Spaces are allowed.
 - Only the first number is returned.
@@ -332,7 +332,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 > If the `number` cannot be converted, NaN (Not a Number) is returned.
 
 
-**Number Properties**
+### Number Properties
 
 | Property | Description |
 | --------- | -------- |
@@ -361,7 +361,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 ```
 
 
-#### The `MAX_VALUE` Property
+### The `MAX_VALUE` Property
 
 - The **`Number.MAX_VALUE`** property represents the maximum numeric value representable in JavaScript.
 - This static property has a value of `1.7976931348623157e+308`.
@@ -390,7 +390,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  // expected output: "Process as Infinity"
 ```
 
-#### The ` MIN_VALUE` Property
+### The ` MIN_VALUE` Property
 
 - The **`Number.MIN_VALUE`** property represents the smallest positive numeric value re-presentable in JavaScript.
 - The `MIN_VALUE` property is the number closest to 0
@@ -421,7 +421,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 ```
 
 
-#### The `NEGATIVE_INFINITY` Property
+### The `NEGATIVE_INFINITY` Property
 ```javascript
  function func() {
    console.log(Number.NEGATIVE_INFINITY);
@@ -438,7 +438,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  // => -Infinity
 ```
 
-#### The `NaN` Property
+### The `NaN` Property
 - The `NaN` property represents "Not-a-Number" value.
 - This property indicates that a value is not a legal number.
 - The `NaN` property is the same as the `Number.NaN` property.
@@ -455,7 +455,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  // => true
 ```
 
-#### The `POSITIVE_INFINITY` Property
+### The `POSITIVE_INFINITY` Property
 - The `POSITIVE_INFINITY` property represents positive infinity `(+infinity)`
 - Positive infinity can be explained as something that is higher than any other number.
 - `POSITIVE_INFINITY` is a static property of the JavaScript Number object.
@@ -485,7 +485,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  foo();
  // => Infinity
 ```
-#### The `constructor` Property
+### The `constructor` Property
 - In JavaScript, the `constructor` property returns the `constructor function` for an `object`.
 - The return value is a reference to the `function`, not the name of the function
 - For JavaScript `numbers` the `constructor` property returns `function Number(){[native code]}`
@@ -505,7 +505,7 @@ We can also add strings which will concatenate them, or put them together.
 ```javascript
 var myStringConcatenate = "This is "+"a string text." // This is a string text.
 ```
-**String Methods**
+### String Methods
 
 | Methods | Description |
 | -------- | ------------- |
