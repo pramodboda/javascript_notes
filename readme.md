@@ -196,7 +196,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  typeof NaN
  => "number"
 ```
-### Numbers
+## Numbers
 - A *number* type serves both for integer and floating point numbers.
 - When a *number* appears directly in a JavaScript program, it's called a *Numeric literals*.
 - JavaScript supports numeric literals in several  formats.
@@ -354,14 +354,14 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  
  Number.NEGATIVE_INFINITY // -Infinity
  
- Number.NaN // 
+ Number.NaN // NaN
  
- Number.POSITIVE_INFINITY // 
+ Number.POSITIVE_INFINITY // Infinity
  
 ```
 
 
-#### Number.MAX_VALUE
+#### The `MAX_VALUE` Property
 
 - The **`Number.MAX_VALUE`** property represents the maximum numeric value representable in JavaScript.
 - This static property has a value of `1.7976931348623157e+308`.
@@ -390,7 +390,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  // expected output: "Process as Infinity"
 ```
 
-#### Number.MIN_VALUE
+#### The ` MIN_VALUE` Property
 
 - The **`Number.MIN_VALUE`** property represents the smallest positive numeric value re-presentable in JavaScript.
 - The `MIN_VALUE` property is the number closest to 0
@@ -421,7 +421,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 ```
 
 
-#### Number.NEGATIVE_INFINITY
+#### The `NEGATIVE_INFINITY` Property
 ```javascript
  function func() {
    console.log(Number.NEGATIVE_INFINITY);
@@ -438,10 +438,11 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  // => -Infinity
 ```
 
-#### NaN
+#### The `NaN` Property
 - The `NaN` property represents "Not-a-Number" value.
 - This property indicates that a value is not a legal number.
-- The `NaN` property is the same as the `Number.NaN` property
+- The `NaN` property is the same as the `Number.NaN` property.
+
 > Tip: Use the isNaN(). global function to check if a value is a NaN value.
  
 ```javascript
@@ -454,7 +455,48 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  // => true
 ```
 
-### Strings
+#### The `POSITIVE_INFINITY` Property
+- The `POSITIVE_INFINITY` property represents positive infinity `(+infinity)`
+- Positive infinity can be explained as something that is higher than any other number.
+- `POSITIVE_INFINITY` is a static property of the JavaScript Number object.
+```javascript
+ var a = 143;  
+ a.POSITIVE_INFINITY;
+ // => undefined
+```
+- Using `a.POSITIVE_INFINITY`, where `a` is a `number` or a `Number object`, will return `undefined`.
+- You will be using it as  `Number.POSITIVE_INFINITY`.
+```javascript
+ 98754604586/0
+ // => Infinity
+```
+```javascript
+ function foo() {
+   console.log(Number.POSITIVE_INFINITY);
+ }
+ foo();
+ // => Infinity
+```
+```javascript
+ function foo() {
+    var n = (Number.MAX_VALUE) * 2;
+    console.log(n);
+ }
+ foo();
+ // => Infinity
+```
+#### The `constructor` Property
+- In JavaScript, the `constructor` property returns the `constructor function` for an `object`.
+- The return value is a reference to the `function`, not the name of the function
+- For JavaScript `numbers` the `constructor` property returns `function Number(){[native code]}`
+- For JavaScript `strings` the `constructor` property returns `function String(){[native code]}`
+- For JavaScript `booleans` the `constructor` property returns `function Boolean(){[native code]}`
+```javascript
+ new String("abc").constructor === String
+ // => true
+```   
+
+## Strings
 ```javascript
 var myString = "This is a string text."
 ```
@@ -479,14 +521,14 @@ x.toString(); // returns "140"
 (140+3).toString(); // returns "143"
 ```
 
-### Boolean
+## Boolean
 ```javascript
 var myBoolean = true;
 var myBoolean2 = false;
 ```
 
-### Undefined
-### Null
+## Undefined
+## Null
 
 ### Best ways to check for each type
 ```javascript
