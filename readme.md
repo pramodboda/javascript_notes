@@ -26,14 +26,14 @@ JS  |  Behavior  |  to specify the behavior of the web pages.
 
 - JavaScript is a high-level programming language.
 - JavaScript is a case-sensitive language.
-	- This means that language keywords, variables, function names, and other identifiers must always be typed with a consistent capitalization of letters.
+	- This means that language `keywords`, `variables`, `function` names, and other `identifiers` must always be typed with a consistent capitalization of letters.
 
-```javascript
- var name = "Pramod Boda"; //initiated variable 'name'
- Name; // will not be same as 'name'
- NAME; // will not be same as 'name'
- name; => "Pramod Boda"
-```
+		```javascript
+		 var name = "Pramod Boda"; //initiated variable 'name'
+		 Name; // will not be same as 'name'
+		 NAME; // will not be same as 'name'
+		 name; => "Pramod Boda"
+		```
 
 - All web browsers support it without the need for plug-ind by means of a built-in JavaScript engine.
 - JavaScript is used on desktops, games consoles, tablets, and smart phones.
@@ -54,7 +54,7 @@ JS  |  Behavior  |  to specify the behavior of the web pages.
 - Unicode is a superset of ASCII and Latin-1 and supports virtually every written language currently used on the planet.
 
 ### Case sensitivity
-- JavaScript is a case-sensitive language. This means that language keywords, variables, funations names, and other identifies must always be typed with consistent capitalization of letters.
+- JavaScript is a case-sensitive language. This means that language `keywords`, `variables`, `function` names, and other `identifies` must always be typed with consistent capitalization of letters.
 ```javascript
  var name = "Pramod Boda"; //initiated variable 'name'
  Name; // will not be same as 'name'
@@ -267,7 +267,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 ```
 > If the `number` cannot be converted, NaN (Not a Number) is returned.
 
-### The Number() method used on Dates
+### The `Number()` method used on `Dates`
 - **Number()** can also convert a `Date` to a `Number`
 ```javascript
  Number(new Date("2018-06-08"))
@@ -390,7 +390,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  // expected output: "Process as Infinity"
 ```
 
-### The ` MIN_VALUE` Property
+### The `MIN_VALUE` Property
 
 - The **`Number.MIN_VALUE`** property represents the smallest positive numeric value re-presentable in JavaScript.
 - The `MIN_VALUE` property is the number closest to 0
@@ -486,6 +486,7 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  // => Infinity
 ```
 ### The `constructor` Property
+- All `objects` produced by built-in `construction functions` in JavaScript have a property called `constructor`.
 - In JavaScript, the `constructor` property returns the `constructor function` for an `object`.
 - The return value is a reference to the `function`, not the name of the function
 - For JavaScript `numbers` the `constructor` property returns `function Number(){[native code]}`
@@ -494,7 +495,11 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 ```javascript
  new String("abc").constructor === String
  // => true
-```   
+```
+
+### The `prototype` Property
+- The `prototype` property allows you to add properties and methods to an `object`.
+-    
 
 ## Strings
 ```javascript
