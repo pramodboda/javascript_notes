@@ -292,6 +292,8 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  // 143
  parseFloat("years 143");
  // NaN
+ parseFloat("years" 143);
+ // NaN
  parseFloat("Pramod Boda");
  // NaN
  parseFloat(true);
@@ -318,6 +320,8 @@ The latest ECMAScript standard defines seven data types in JavaScript:
  // 143
  parseInt("years 143"); 
  // NaN
+ parseInt("years", 143); 
+ // NaN
  parseInt("Pramod Boda");
  // NaN
  parseInt(true);
@@ -343,23 +347,34 @@ The latest ECMAScript standard defines seven data types in JavaScript:
 **Always use correct syntax**
 ```javascript
  var a = Number.MAX_VALUE;
- console.log(a); // 1.7976931348623157e+308  // Return Value: A Number, 1.7976931348623157e+308
+ console.log(a); // Return Value: A Number, 1.7976931348623157e+308
  
  var b = Number.MIN_VALUE;
- console.log(b); // 5e-324  // Return Value: A Number, 5e-324
+ console.log(b); // Return Value: A Number, 5e-324
  
- Number.NEGATIVE_INFINITY //
+ Number.NEGATIVE_INFINITY // -Infinity
  
- Number.NaN //
+ Number.NaN // 
  
  Number.POSITIVE_INFINITY // 
  
 ```
 
 
-#### MAX_VALUE
+#### Number.MAX_VALUE
 
-The **`Number.MAX_VALUE`** property represents the maximum numeric value representable in JavaScript.
+- The **`Number.MAX_VALUE`** property represents the maximum numeric value representable in JavaScript.
+- This static property has a value of `1.7976931348623157e+308`.
+- `MAX_VALUE` is a static property of the JavaScript Number object. You can only use it as `Number.MAX_VALUE`.
+
+```javascript
+ var x = 143;  
+ x.MAX_VALUE;
+ console.log(x); // returns 'undefined'.
+```
+- Using `x.Max_VALUE`, where `x` is a number or a Number object, will return `undefined`
+
+> Note: `Numbers` larger than MAX_VALUE are represented as `infinity`. 
 
 ```javascript
  function multiply(x, y) {
@@ -375,7 +390,7 @@ The **`Number.MAX_VALUE`** property represents the maximum numeric value represe
  // expected output: "Process as Infinity"
 ```
 
-#### MIN_VALUE
+#### Number.MIN_VALUE
 
 - The **`Number.MIN_VALUE`** property represents the smallest positive numeric value re-presentable in JavaScript.
 - The `MIN_VALUE` property is the number closest to 0
@@ -383,6 +398,14 @@ The **`Number.MAX_VALUE`** property represents the maximum numeric value represe
 - Values smaller than `MIN_VALUE` ("underflow values") are converted to 0.
 - Because `MIN_VALUE` is a static property of `Number`, you always use it as `Number.MIN_VALUE`, rather than as a property of a `Number` object you created.
 
+- `MIN_VALUE`  is a static property of the JavaScript Number object. You can only use it as  `Number.MIN_VALUE`.
+```javascript
+ var x = 143;  
+ x.MIN_VALUE;
+ console.log(x); // returns 'undefined'.
+```
+- Using `x.MIN_VALUE`, where `x` is a `number` or a `Number object`, will return `undefined`
+> Note: `Numbers` smaller than MIN_VALUE are converted as `0`. 
 ```javascript
  function multiply(x, y) {
   if (x * y < Number.MIN_VALUE) {
@@ -396,7 +419,41 @@ The **`Number.MAX_VALUE`** property represents the maximum numeric value represe
  console.log(multiply(-1.7976931348623157e+308, 2));
  // expected output: Process as -Infinity
 ```
-#### MIN_VALUE
+
+
+#### Number.NEGATIVE_INFINITY
+```javascript
+ function func() {
+   console.log(Number.NEGATIVE_INFINITY);
+ }
+ func();
+ // => -Infinity
+```
+```javascript
+ function func() {
+    var n = (-Number.MAX_VALUE) * 2;
+    console.log(n);
+ }
+ func();
+ // => -Infinity
+```
+
+#### NaN
+- The `NaN` property represents "Not-a-Number" value.
+- This property indicates that a value is not a legal number.
+- The `NaN` property is the same as the `Number.NaN` property
+> Tip: Use the isNaN(). global function to check if a value is a NaN value.
+ 
+```javascript
+ var a = 4564;
+ isNaN(a);
+ // => False
+ 
+ var a = "dkjfg.87dsm";
+ isNaN(a);
+ // => true
+```
+
 ### Strings
 ```javascript
 var myString = "This is a string text."
@@ -433,16 +490,25 @@ var myBoolean2 = false;
 
 ### Best ways to check for each type
 ```javascript
-var foo;
+ var foo;
 
-typeof foo == 'undefined'
-=>true
+ typeof foo == 'undefined'
+ =>true
 
-isNaN(foo);
-=>true
+ isNaN(foo);
+ =>true
 
-foo === undefined
-=>true
+ foo === undefined
+ =>true
+```
+```javascript
+ var a = 4564;
+ isNaN(a);
+ // => False
+ 
+ var a = "dkjfg.87dsm";
+ isNaN(a);
+ // => true
 ```
 
 [<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
