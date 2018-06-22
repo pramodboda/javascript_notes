@@ -525,11 +525,11 @@ We can also add strings which will concatenate them, or put them together.
 
  var firstName = "Pramod";
  var lastName = "Boda";
- console.log(firstName + lastName); // "PramodBoda"
+ console.log(firstName + lastName); // PramodBoda
  console.log(firstName+ " " +lastName); // Pramod Boda
 
 
- firstName.concat(lastName) // PramodBoda
+ firstName.concat(lastName) // "PramodBoda"
 
  var nickName = "Pro";
  (firstName+" "+lastName).concat("("+nickName+")") // "Pramod Boda(Pro)"
