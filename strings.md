@@ -20,8 +20,6 @@ We can also add strings which will concatenate them, or put them together.
  (firstName+" "+lastName).concat("("+nickName+")") // "Pramod Boda(Pro)"
 ```
 
-Read More about [Strings](https://github.com/pramodkumarboda/javascript_notes/blob/master/strings.md)
-
 Strings can be created from other types using `String()` function
 
 ```javascript
@@ -90,5 +88,5 @@ x.toString(); // returns "140"
 (140+3).toString(); // returns "143"
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1OTU2MDEwNywyMDIwMzI2Njk0XX0=
+eyJoaXN0b3J5IjpbLTg1ODE3MjI2NCwyMDIwMzI2Njk0XX0=
 -->
