@@ -35,6 +35,7 @@ Strings can be created from other types using `String()` function
  // "null"
 ```
 Or, you can also create or convert Numbers, Booleans, or Objects to Strings by using `toString()` function, But it will not convert `null`, `undefined`, `String`.
+
 ```javascript
  var floatString = (242.1657).toString();
  // "242.1657"
@@ -50,6 +51,7 @@ Or, you can also create or convert Numbers, Booleans, or Objects to Strings by u
  
  var undefinedString = (undefined).toString();
  // Error : will not convert to string
+ ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMDMyNjY5NF19
+eyJoaXN0b3J5IjpbLTExNjkzNzUxOTQsMjAyMDMyNjY5NF19
 -->
