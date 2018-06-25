@@ -535,7 +535,7 @@ We can also add strings which will concatenate them, or put them together.
  (firstName+" "+lastName).concat("("+nickName+")") // "Pramod Boda(Pro)"
 ```
 
-Read More about {Strings}(https://github.com/pramodkumarboda/javascript_notes/blob/master/strings.md)
+Read More about [Strings](https://github.com/pramodkumarboda/javascript_notes/blob/master/strings.md)
 Strings can be created from other types using `String()` function
 
 ```javascript
