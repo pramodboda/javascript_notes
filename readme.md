@@ -124,7 +124,31 @@ JS  |  Behavior  |  to specify the behavior of the web pages.
 ```
 
 ### Reserved Words
+- You cannot use these words as `identifiers` in your programs.
 
+* | * | * | * | *
+-------- | ----- | ----- | ----- | -----
+`break` | `delete` | `function` | `return` | `typeof` |
+`case` | `do` | `if` | `switch` | `var` |
+`catch` | `else` | `in`  | `this` | `void` |
+`continue` | `false` | `instanceof` | `throw` | `while` |
+`debugger` | `finally` | `new` | `true` | `with` |
+`default` | `for` | `null` | `try` |  |
+
+**Non-reserved words that act like reserved words**
+- The `NaN`, `Infinity`, `undefined` properties of the global ogject are immutable or read-only properties in ES5. So even though `var NaN = 42;` in the global scope wouldn't throw an error, it wouldn't actually do anything
+- To avoid confusion, I'd suggest you to avoiding the use of these `variable` names.
+```javascript
+ //In the global scope
+ var NaN = 42;
+ console.log(NaN); // NaN
+ 
+ //...but elsewhere
+ (function(){
+	 var NaN = 42;
+	 console.log(NaN); // 42
+ }());
+```
 
 ### Dynamic Typing
 JavaScript is a loosely typed or a dynamic language.
@@ -247,6 +271,14 @@ We can also add strings which will concatenate them, or put them together.
 
 
 ## Boolean
+- A `boolean` value represents truth or falsehood.
+	- On | Off
+	- Yes | No
+	- True | False
+- There are only two possible values of this type, we called as `true` and `false` .
+- Those are reserved keywords for JavaScript.
+- `true` and `false` values are generally the result of comparisons you make in your JavaScript programs. 
+
 ```javascript
 var myBoolean = true;
 var myBoolean2 = false;
