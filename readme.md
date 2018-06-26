@@ -124,6 +124,7 @@ JS  |  Behavior  |  to specify the behavior of the web pages.
 ```
 
 ### Reserved Words
+
 - You cannot use these words as `identifiers` in your programs.
 
 | * | * | * | * | * |
@@ -133,7 +134,7 @@ JS  |  Behavior  |  to specify the behavior of the web pages.
 | `catch` | `else` | `in`  | `this` | `void` |
 | `continue` | `false` | `instanceof` | `throw` | `while` |
 | `debugger` | `finally` | `new` | `true` | `with` |
-| `default` | `for` | `null` | `try` | * |
+| `default` | `for` | `null` | `try` |  |
 
 **Non-reserved words that act like reserved words**
 - The `NaN`, `Infinity`, `undefined` properties of the global ogject are immutable or read-only properties in ES5. So even though `var NaN = 42;` in the global scope wouldn't throw an error, it wouldn't actually do anything
