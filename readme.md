@@ -397,7 +397,7 @@ if(y === void 0){
  // throws a  - Uncaught ReferenceError: y is not defined.
 }
 ```
-**Difference between `null` and `undefined`**
+## Difference between `null` and `undefined`
 ```javascript
  typeof null // "object" (not "null" for legacy reasons)
  
@@ -418,7 +418,7 @@ if(y === void 0){
  6 + undefined // will be NaN 
  
 ```
-
+-From the preceding examples, it is clear that `undefined` and `null` are two distinct types: `undefined`is a type itself (undefined) while `null` is an object. 
 ## Object
 
 ### Getting object type by constructor name
