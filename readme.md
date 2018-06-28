@@ -525,16 +525,16 @@ if(y === void 0){
 ## Operators
 
 - JavaScript has following types of operators: 
-	--   [Assignment operators](#)
-	--   [Comparison operators](#)
-	--   [Logical operators](#)
-	--   [Arithmetic operators](#)
-	--   [Bitwise operators](#)
-	--   [String operators](#)
-	--   [Conditional (ternary) operator](#)
-	--   [Comma operator](#)
-	--   [Unary operators](#)
-	--   [Relational operators](#)
+	-- [Assignment operators](#)
+	-- [Comparison operators](#)
+	-- [Logical operators](#)
+	-- [Arithmetic operators](#)
+	-- [Bitwise operators](#)
+	-- [String operators](#)
+	-- [Conditional (ternary) operator](#)
+	-- [Comma operator](#)
+	-- [Unary operators](#)
+	-- [Relational operators](#)
 
 ### Comparison Operators
 Assume `a=4`
