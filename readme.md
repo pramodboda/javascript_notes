@@ -430,7 +430,7 @@ if(y === void 0){
  Object.prototype.toString.call(undefined);  // [object Undefined]
  
 ```
--From the preceding examples, it is clear that `undefined` and `null` are two distinct types: `undefined`is a type itself (undefined) while `null` is an object. 
+- From the preceding examples, it is clear that `undefined` and `null` are two distinct types: `undefined`is a type itself (undefined) while `null` is an object. 
 ## Object
 - The `object` type is a special type.
 - The `object` constructor creates an `object` wrapper for the given value.
