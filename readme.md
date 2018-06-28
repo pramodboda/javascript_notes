@@ -335,6 +335,10 @@ var myBoolean2 = false;
 - The `undefined` value represents a deeper kind of absence of a value.
 - It is the `value` of the variables that have not been initialized and the `value` you get when you query the value of an `object` property or an `array` element that does not exist, is know as `undefined`.
 - The `undefined` value is also returned by 	`functions`  that have no return value, and the value of `function` parameters for which no argument is supplied.
+```javascript
+ var value =  (function(){})();  // returns undefined
+ (function(undefined){  // parameter is undefined  })();
+```
 - in **ECMAScript 3**, `undefined` is a read/ write variable, and it can be set to any value. This error is corrected in **ECMAScript 5** and `undefined` is read-only in that version of the language.
 - If you apply the `typeof` operator to the `undefined` value, it returns `"undefined"`, indicating that this value is the sole member of a special type.
 
@@ -397,6 +401,11 @@ if(y === void 0){
  // throws a  - Uncaught ReferenceError: y is not defined.
 }
 ```
+```javascript
+ var array =  [1,  2,  3];
+ var foo = array.foo;  // foo property doesn't exist, returns undefined
+ var item = array[5];  // no item exists in the array at index 5, returns undefined
+```
 ## Difference between `null` and `undefined`
 ```javascript
  typeof null // "object" (not "null" for legacy reasons)
@@ -416,10 +425,15 @@ if(y === void 0){
  isNaN(6 + undefined)	// true
  // Because
  6 + undefined // will be NaN 
+
+ Object.prototype.toString.call(null);  // [object Null]
+ Object.prototype.toString.call(undefined);  // [object Undefined]
  
 ```
 -From the preceding examples, it is clear that `undefined` and `null` are two distinct types: `undefined`is a type itself (undefined) while `null` is an object. 
 ## Object
+- The `object` type is a special type.
+- The `object` constructor creates an `object` wrapper for the given value.
 
 ### Getting object type by constructor name
 **String**
