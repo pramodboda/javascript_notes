@@ -291,11 +291,27 @@ var myBoolean2 = false;
 ```javascript
  var casteStatus= null;
  ```
- 
-- `null` is a language keyword that evaluates to a special value that is usually used to indicate the absence of a any `object` value.
+- It's just a special value which had the sense of "nothing", "empty" or "value unknown".
+- The code above states that the `casteStatus` is unknown or empty for some reason. 
+- `null` is a language keyword that evaluates to a special value that is usually used to indicate the absence of any `object` value.
 - It is one of JavaScript's primitive values.
-- `null` is one of the standard built-in object.
+- `null` is one of the standard built-in `object`.
 - The value `null` is written with a literal: `null`
+- In JavaScript `null` is not a "reference to non-existing object" or a "null pointer" like in some other languages.
+
+```javascript
+ function getVowels(str){
+	 var p = str.match(/[aeiou]/gi);
+	 if(m === null){
+		 return 0;
+	 }
+	 return p.lenght;
+ }
+ console.log(getVowels('sky'));
+ // expected output: 0
+ // observe how null is used above getVowels(str) function.
+```
+
 
 ## Undefined
 - The special value `undefined` stands apart. its makes a type of its own just like `null`.
@@ -380,6 +396,27 @@ The `void` operator is a third alternative.
 if(y === void 0){
  // throws a  - Uncaught ReferenceError: y is not defined.
 }
+```
+**Difference between `null` and `undefined`**
+```javascript
+ typeof null // "object" (not "null" for legacy reasons)
+ 
+ typeof undefined		// "undefined"
+ 
+ null === undefined		// false
+ 
+ null == undefined		// true
+ 
+ !null					// true
+ 
+ isNaN(6 + null)		// false 
+ // Because
+ 6 + null // is 6, 6 is a number
+ 
+ isNaN(6 + undefined)	// true
+ // Because
+ 6 + undefined // will be NaN 
+ 
 ```
 
 ## Object
