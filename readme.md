@@ -284,9 +284,103 @@ We can also add strings which will concatenate them, or put them together.
 var myBoolean = true;
 var myBoolean2 = false;
 ```
+- _Comparison_ and _Logical_ operators(will be discussed in [operators](#) section) are used to test for `true` or `false`.
+## Null
+- The special `null` value does not belong to any type of those described above.
+- It forms a separate type of its own, which contains only the `null` value:
+```javascript
+ var casteStatus= null;
+ ```
+ 
+- `null` is a language keyword that evaluates to a special value that is usually used to indicate the absence of a any `object` value.
+- It is one of JavaScript's primitive values.
+- `null` is one of the standard built-in object.
+- The value `null` is written with a literal: `null`
 
 ## Undefined
-## Null
+- The special value `undefined` stands apart. its makes a type of its own just like `null`.
+- The meaning of `undefined` is "value is not assigned".
+- If a `variable` is declared, but not assigned, then its value if exactly `undefined`:
+```javascript
+ var x;
+ console.log(x); // shows "undefined"
+``` 
+- Technically, it is possible to assign `undefined` to any variable: 
+```javascript
+ var x = 143;
+ x = undefined;
+ console.log(x);// "undefined"
+```
+- But it's not recommended to do that. Normally, we use `null` to write an "empty" or an "unknown" value into the variable
+- `undefined` is only used for checks, to see if the variable is assigned or similar.
+- `undefined` is a property of the _global object_; i.e., it is a variable in global scope, that means `undefined` is a predefined `global variable` that is initialized to the `undefined` value.
+- `undefined` is not a language keyword like `null`.
+- The initial value of `undefined` is the primitive value `undeifned`.
+- The `undefined` value represents a deeper kind of absence of a value.
+- It is the `value` of the variables that have not been initialized and the `value` you get when you query the value of an `object` property or an `array` element that does not exist, is know as `undefined`.
+- The `undefined` value is also returned by 	`functions`  that have no return value, and the value of `function` parameters for which no argument is supplied.
+- in **ECMAScript 3**, `undefined` is a read/ write variable, and it can be set to any value. This error is corrected in **ECMAScript 5** and `undefined` is read-only in that version of the language.
+- If you apply the `typeof` operator to the `undefined` value, it returns `"undefined"`, indicating that this value is the sole member of a special type.
+
+**Strict equality and `undefined`**
+```javascript
+ function testIsUndefined(t){
+	if(t === undefined){
+		return "This is a undefined value!";
+	}
+	else{
+		return "It has a value!";
+	}
+	return t;
+ }
+ 
+ var x;
+ console.log(testIsUndefined(x));
+ // expected output: "This is a undefined value!"
+```
+
+**`typeof` operator and `undefined`**
+Alternatively, `typeof` can be used:
+```javascript
+ function testIsUndefined(t){
+	if(typeof t === "undefined"){
+		return "This is a undefined value!";
+	}
+	else{
+		return "It has a value!";
+	}
+	return t;
+ }
+ 
+ var x;
+ console.log(testIsUndefined(x));
+ // expected output: "This is a undefined value!"
+```
+one reason to use `typeof` is that it does not throw an error if the `variable` has not been declared.
+```javascript
+ //x has not been declared before
+ if(typeof x == 'undefined'){
+	//evalutes to true without errors
+	//these statements executes
+ }
+
+ if(x === undefined){
+	//throws a ReferenceError
+ }
+```
+However, this kind of technique should be avoided.
+**`void` operator and `undefined`**
+The `void` operator is a third alternative.
+```javascript
+ var x;
+ if(x === void 0){
+  // these statements execute
+ }
+// y has not been declared before
+if(y === void 0){
+ // throws a  - Uncaught ReferenceError: y is not defined.
+}
+```
 
 ## Object
 
@@ -378,6 +472,26 @@ var myBoolean2 = false;
 
 [<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
 ## Operators
+
+- JavaScript has following types of operators: 
+	--   [Assignment operators](#)
+	--   [Comparison operators](#)
+	--   [Logical operators](#)
+	--   [Arithmetic operators](#)
+	--   [Bitwise operators](#)
+	--   [String operators](#)
+	--   [Conditional (ternary) operator](#)
+	--   [Comma operator](#)
+	--   [Unary operators](#)
+	--   [Relational operators](#)
+
+### Comparison Operators
+Assume `a=4`
+| Operator | Description | Comparing | Returns |
+| ------ | ------ | ------ | ------ |
+| `==` | equal to | `a == 6` | `false` |
+| `===` | equal and equal type | `a === 4` | `true` |
+| `!=` | Not equal to | `a != 6` | `true` |
 ### What will be the output and why?
 ```javascript
 1>2>3 ==>??
