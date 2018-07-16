@@ -9,8 +9,9 @@ JavaScript Notes
 ## Index
 1. [Introduction](#jsIntroduction)
 2. [Lexical Structure](#jsLexicalStructure)
-4. [Variables](#jsVariables) 
-5. [Data Types](#jsDataTypes)
+3. [Variables](#jsVariables) 
+4. [Data Types](#jsDataTypes)
+6. [Operators](#jsOperators)
 
 <a id="jsIntroduction"></a>
 ## Introduction
@@ -522,27 +523,75 @@ if(y === void 0){
 ```
 
 [<img src="images/toc.png" width="24" height="24" style="float: right;"/>](#toc)
+
+<a id="jsOperators"></a>
 ## Operators
 
 - JavaScript has following types of operators: 
-	-- [Assignment operators](#)
-	-- [Comparison operators](#)
-	-- [Logical operators](#)
-	-- [Arithmetic operators](#)
-	-- [Bitwise operators](#)
-	-- [String operators](#)
-	-- [Conditional (ternary) operator](#)
-	-- [Comma operator](#)
-	-- [Unary operators](#)
-	-- [Relational operators](#)
+	- [Assignment operators](#)
+	-  [Comparison operators](#)
+	- [Logical operators](#)
+	-  [Arithmetic operators](#)
+	- [Bitwise operators](#)
+	- [String operators](#)
+	- [Conditional (ternary) operator](#)
+	- [Comma operator](#)
+	-  [Unary operators](#)
+	- [Relational operators](#)
 
 ### Comparison Operators
 Assume `a=4`
-| Operator | Description | Comparing | Returns |
+| Operator | Description | Comparing | Output |
 | ------ | ------ | ------ | ------ |
 | `==` | equal to | `a == 6` | `false` |
 | `===` | equal and equal type | `a === 4` | `true` |
 | `!=` | Not equal to | `a != 6` | `true` |
+| `!==` | not equal value or not equal type | `a !== 6` | `true` |
+| `>` | greater than | `a > 6` | `false` |
+| `<` | less than | `a < 6` | `true` |
+| `>=` | greater than or equal to | `a >= 4` | `true` |
+| `<=` | less than or equal to | `a <= 4` | `true` |
+| `?` | ternary operator | `(a<=3) ? "greater than or equal to 4":"less than or equal to 4"` | less than or equal to 4 |
+
+### Conditional (Ternary) Operator
+JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
+#### Example
+#### HTML:
+```html
+ <h3>Vote Eligible Check</h3>
+ <input type="text" id="userAge">
+ <div id="voteEligibleStatus"></div>
+```
+#### JS:
+```javascript
+ var userAge = document.getElementById('userAge');
+ var voteEligibleStatus = document.getElementById('voteEligibleStatus');
+ voteEligibleStatus.style.display =  "none";
+
+ userAge.addEventListener("input", voteEligibleCheck,  false);
+ 
+ function voteEligibleCheck()  {
+	 var age = userAge.value;
+	 if  (isNaN(age))  {
+		 var ageEligibleStatus =  "Given input is not a number";
+	 } else  {
+		 // Conditional (Ternary) Operator
+		 var ageEligibleStatus =  (age <  18)  ?  "not eligible"  :  "eligible";
+		 }
+	 voteEligibleStatus.innerHTML = ageEligibleStatus +  " to vote.";
+	 voteEligibleStatus.style.display =  "block";
+	 voteEligibleStatus.classList.add("alert-success");
+	 if  (age ==  null  || age ==  "")  {
+		 voteEligibleStatus.innerHTML =  " ";
+		 voteEligibleStatus.style.display =  "none";
+	 }
+ }
+```
+
+### Comparing Different Types
+
+
+
 ### What will be the output and why?
 ```javascript
 1>2>3 ==>??
