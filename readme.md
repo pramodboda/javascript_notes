@@ -541,6 +541,7 @@ if(y === void 0){
 
 ### Comparison Operators
 Assume `a=4`
+
 Operator | Description | Comparing | Output
 ------ | ------ | ------ | ------ 
 `==` | equal to | `a == 6` | `false`
