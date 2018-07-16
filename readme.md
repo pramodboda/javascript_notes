@@ -5,6 +5,11 @@ JavaScript Notes
 **Artist** | **UI Designer and Developer** | **Motion Graphic Designer**
 
 
+## Steps to achieve JS
+- Complete in-depth learning basics and advanced concepts on JavaScript with practical.
+- Think, plan and work on small JavaScript projects, list them and complete one by one.
+- Gather all completed projects and add into one huge web application project.
+- Start Learning JS Frameworks.
 
 ## Index
 1. [Introduction](#jsIntroduction)
