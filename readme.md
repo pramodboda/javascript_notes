@@ -541,17 +541,17 @@ if(y === void 0){
 
 ### Comparison Operators
 Assume `a=4`
-| Operator | Description | Comparing | Output |
-| ------ | ------ | ------ | ------ |
-| `==` | equal to | `a == 6` | `false` |
-| `===` | equal and equal type | `a === 4` | `true` |
-| `!=` | Not equal to | `a != 6` | `true` |
-| `!==` | not equal value or not equal type | `a !== 6` | `true` |
-| `>` | greater than | `a > 6` | `false` |
-| `<` | less than | `a < 6` | `true` |
-| `>=` | greater than or equal to | `a >= 4` | `true` |
-| `<=` | less than or equal to | `a <= 4` | `true` |
-| `?` | ternary operator | `(a<=3) ? "greater than or equal to 4":"less than or equal to 4"` | less than or equal to 4 |
+Operator | Description | Comparing | Output
+------ | ------ | ------ | ------ 
+`==` | equal to | `a == 6` | `false`
+`===` | equal and equal type | `a === 4` | `true`
+`!=` | Not equal to | `a != 6` | `true`
+`!==` | not equal value or not equal type | `a !== 6` | `true`
+`>` | greater than | `a > 6` | `false`
+`<` | less than | `a < 6` | `true`
+`>=` | greater than or equal to | `a >= 4` | `true`
+`<=` | less than or equal to | `a <= 4` | `true`
+`?` | ternary operator | `(a<=3) ? "greater than or equal to 4":"less than or equal to 4"` | less than or equal to 4
 
 ### Conditional (Ternary) Operator
 JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
