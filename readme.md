@@ -11,6 +11,20 @@ JavaScript Notes
 - Gather all completed projects and add into one huge web application project.
 - Start Learning JS Frameworks.
 
+## Basics to cutting edge techniques
+- JavaScript Complete Guide
+- JavaScript by Example
+- JavaScript and JSON Essentials
+- Mastering JavaScript Functional Programming
+- Object-Oriented Programming with JavaScript
+- Data Structures in JavaScript
+- Learning JavaScript Data Structures and Algorithms
+- The Complete JavaScript Developer - MEAN stack zero-to- hero
+- Grunt.JS : Automate web development tasks and save your time.
+- Machine Learning with JavaScript 
+- Augmented Reality for JavaScript Developers
+
+
 ## Index
 1. [Introduction](#jsIntroduction)
 2. [Lexical Structure](#jsLexicalStructure)
@@ -543,6 +557,20 @@ if(y === void 0){
 	- [Comma operator](#)
 	-  [Unary operators](#)
 	- [Relational operators](#)
+### Assignment Operators
+- Assignment operators are used to assign values to JavaScript variables.
+
+Assume `a=10` and `b=20`
+Operator | Example | Same as | Output
+------ | ------ | ------ | ------ 
+`=` | `a=b` | `a=b` | `20`
+`+=` | `a+=b` | `a=a+b` | `30`
+`-=` | `a-=b` | `a=a-b` | `-10`
+`*=` | `a*=b` | `a=a*b` | `200`
+`/=` | `a/=b` | `a=a/b` | `0.5`
+`%=` | `a%=b` | `a=a%b` | `10`
+`<<=` | `a<<=b` | `a=a<<b` | `10485760`
+
 
 ### Comparison Operators
 Assume `a=4`
@@ -594,7 +622,6 @@ JavaScript also contains a conditional operator that assigns a value to a variab
  }
 ```
 
-### Comparing Different Types
 
 
 
