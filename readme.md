@@ -287,6 +287,29 @@ We can also add strings which will concatenate them, or put them together.
  (firstName+" "+lastName).concat("("+nickName+")") // "Pramod Boda(Pro)"
 ```
 
+**String interpolation**
+JavaScript allows multi-line strings also. 
+```javscript
+console.log(`I am string statement first line
+I am string statement second line
+I am string statement third line `);
+
+output:
+I am string statement first line
+I am string statement second line
+I am string statement third line
+```
+This kind of string is also known as template string can be use for string interpolation.
+
+```javascript
+ var a = 10, b = 20;
+ 
+ console.log(`Sum of  value is :${a+b} and multiplication is ${a*b}`);
+ 
+ output:
+ Sum of value is :30 and multiplication is 200
+```
+
 [Read more about Strings](https://github.com/pramodkumarboda/javascript_notes/blob/master/strings.md)
 
 
