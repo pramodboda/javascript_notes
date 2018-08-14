@@ -314,10 +314,12 @@ I am string statement third line
 ```javascript
  var a=10, b=20;
  
- console.log(`Sum of  value is:${a+b} and multiplication is ${a*b}`);
+ console.log(`Sum of  value is :${a+b}
+ multiplication is: ${a*b}`);
  
  output:
- Sum of value is:30 and multiplication is: 200
+ Sum of value is: 30
+ multiplication is: 200
 ```
 
 [Read more about Strings](https://github.com/pramodkumarboda/javascript_notes/blob/master/strings.md)
