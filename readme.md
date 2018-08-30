@@ -276,6 +276,7 @@ to get length value of `Number` in JavaScript you have to convert `Number` value
 
 Note: but It won't work with all type numbers ex: float 874.65498576
 
+https://stackoverflow.com/questions/14879691/get-number-of-digits-with-javascript/14879700
 
 [Read more about Numbers](https://github.com/pramodkumarboda/javascript_notes/blob/master/numbers.md)
 
