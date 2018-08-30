@@ -264,6 +264,17 @@ The latest ECMAScript standard defines seven data types in JavaScript:
       143/ +0 //=> ??
       143/ -0 //=> ??
 	```
+### Get length of digits for Number value with JavaScript
+to get length value of `Number` in JavaScript you have to convert `Number` value to `String` first then you can read the length of variable value.
+
+```javascript
+ var num = 87465498576
+ var a = num.toString().length;
+ console.log(a);
+ >> 11
+```
+
+
 [Read more about Numbers](https://github.com/pramodkumarboda/javascript_notes/blob/master/numbers.md)
 
 ## Strings
