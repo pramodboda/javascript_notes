@@ -274,6 +274,8 @@ to get length value of `Number` in JavaScript you have to convert `Number` value
  >> 11
 ```
 
+Note: but It won't work with all type numbers ex: float 874.65498576
+
 
 [Read more about Numbers](https://github.com/pramodkumarboda/javascript_notes/blob/master/numbers.md)
 
