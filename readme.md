@@ -610,6 +610,7 @@ if(y === void 0){
 - Assignment operators are used to assign values to JavaScript variables.
 
 Assume `a=10` and `b=20`
+
 Operator | Example | Same as | Output
 ------ | ------ | ------ | ------ 
 `=` | `a=b` | `a=b` | `20`
