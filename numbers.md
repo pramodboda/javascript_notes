@@ -316,5 +316,5 @@
 
 > `Prototype` is a `global object constructor` which is available for all JavaScript `objects`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjY3Nzg1Nl19
+eyJoaXN0b3J5IjpbLTE0MjMxMTc2MDksMTgxNjY3Nzg1Nl19
 -->
