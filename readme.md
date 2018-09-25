@@ -645,7 +645,7 @@ Operator | Description | Comparing | Output
 Operator | Usage | Description
 ------ | ------ | ------
 Logical AND `&&` | `expr1`&&`expr2` | Returns `expr1` if it can be converted to `false`; otherwise, returns `expr2`. Thus, when used with Boolean values, `&&`returns `true` if both operands are true; otherwise, returns `false`.
-Logical OR `_||_` | dfgdgfg | Returns `expr1` if it can be converted to `true`; otherwise, returns `expr2`. Thus, when used with Boolean values, `||`returns `true` if either operand is `true`.
+Logical OR _`||`_ | dfgdgfg | Returns `expr1` if it can be converted to `true`; otherwise, returns `expr2`. Thus, when used with Boolean values, `||`returns `true` if either operand is `true`.
 Logical NOT `!` | `!expr` | Returns `false` if its single operand can be converted to `true`; otherwise, returns `true`.
 
 
