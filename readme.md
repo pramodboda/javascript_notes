@@ -637,6 +637,19 @@ Operator | Description | Comparing | Output
 `<=` | less than or equal to | `a <= 4` | `true`
 `?` | ternary operator | `(a<=3) ? "greater than or equal to 4":"less than or equal to 4"` | less than or equal to 4
 
+### Logical operators
+- Logical operator are typically used with `Boolean` (logical) values.
+- When they are, they return a Boolean value.
+- The `&&` and `||` operators actually return the value on one of the specified operands.
+
+Operator | Usage | Description
+------ | ------ | ------ | ------ 
+Logical AND `&&` | `expr1`&&`expr2` | Returns `expr1` if it can be converted to `false`; otherwise, returns `expr2`. Thus, when used with Boolean values, `&&`returns `true` if both operands are true; otherwise, returns `false`.
+Logical OR `||` | `expr1||expr2` | Returns `expr1` if it can be converted to `true`; otherwise, returns `expr2`. Thus, when used with Boolean values, `||`returns `true` if either operand is `true`.
+Logical NOT `!` | `!expr` | Returns `false` if its single operand can be converted to `true`; otherwise, returns `true`.
+
+
+
 ### Conditional (Ternary) Operator
 JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
 #### Example
