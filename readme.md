@@ -377,8 +377,8 @@ var myBoolean2 = false;
    return m.length;
  }
 
- console.log(getVowels('pradeep'));
- // expected output: 0
+ console.log(getVowels('pramod'));
+ // expected output: 2
  // observe how null is used above getVowels(str) function.
 ```
 
@@ -703,5 +703,5 @@ JavaScript also contains a conditional operator that assigns a value to a variab
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1OTk2NDQ0Nl19
+eyJoaXN0b3J5IjpbLTE2NDEwOTc1MjRdfQ==
 -->
