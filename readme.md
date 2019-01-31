@@ -369,15 +369,16 @@ var myBoolean2 = false;
 - In JavaScript `null` is not a "reference to non-existing object" or a "null pointer" like in some other languages.
 
 ```javascript
- function getVowels(str){
-	 var p = str.match(/[aeiou]/gi);
-	 if(m === null){
-		 return 0;
-	 }
-	 return p.lenght;
- }
- console.log(getVowels('sky'));
- // expected output: 0
+function getVowels(str) {
+  var m = str.match(/[aeiou]/gi);
+  if (m === null) {
+    return 0;
+  }
+  return m.length;
+}
+
+console.log(getVowels('pradeep'));
+// expected output: 0
  // observe how null is used above getVowels(str) function.
 ```
 
@@ -701,3 +702,6 @@ JavaScript also contains a conditional operator that assigns a value to a variab
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwMjU5MDI2MjJdfQ==
+-->
