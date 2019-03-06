@@ -2,7 +2,7 @@ JavaScript Notes
 =
 <a id="toc"></a>
 ## About Pramod Boda
-**Artist** | **UI Designer and Developer** | **Motion Graphic Designer**
+**Artist** | **UI Designer and Developer** | **Motion Graphic Design**
 
 
 ## Steps to achieve JS
@@ -703,5 +703,5 @@ JavaScript also contains a conditional operator that assigns a value to a variab
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDEwOTc1MjRdfQ==
+eyJoaXN0b3J5IjpbMjEzNTg2MjQ5NSwtMTY0MTA5NzUyNF19
 -->
